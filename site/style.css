@@ -1,10 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,400;1,100&family=Yeseva+One&display=swap');
 
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+header{
+    display: flex;
+    border: solid;
+    align-items: center;
+    justify-content: space-between;
+}
+
 h1{
-    font-family: 'Yeseva One', 'cursive';
- }
+    font-family: 'Yeseva One';
+}
 
 p{
+    margin: 1rem;
     font-family: 'Josefin Sans', sans-serif;
 }
+
+img{
+    width: 6rem;
+}
+
+
+
 
