@@ -44,23 +44,53 @@ body{
 
 header{
     display: flex;
-
-    background-color: #fb8dee;
     align-items: center;
     justify-content: space-between;
     height: 7rem;
     font-family: var(--texto);
 }
 
-header ul{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.titulo h1{
+    text-transform: uppercase;
+    margin-left: 10rem;
+    font-size: 3rem;
 }
 
-header img{
-    width: 5rem;
+.info{
+    display: flex;
+    width: 70vw;    
+    position: absolute;
+    padding-top: 8rem;
+    justify-content: space-between;
+    padding-left: 8rem;
+}
+
+.info span{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.topic{
+    display: flex;
+    left: 0;
+    display: flex;
+    gap: 3rem;
+}
+
+.header-social{
+    display: flex;
+    gap: 3rem;
+}
+
+.header-social i{
+    color: #000000;
+}
+
+.separando{
+    position: absolute;
+    width: 70%;
+    border: solid .1rem #4c4c4c27;
+    margin: 12rem 0rem 0 6rem;
 }
 
 .sidebar{
@@ -138,6 +168,7 @@ header img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
 } 
 
 .navigation{
@@ -222,9 +253,6 @@ input{
     border-radius: 1rem;
     margin-bottom: .6rem;
 }
-
-
-
 
 
 
