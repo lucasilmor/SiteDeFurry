@@ -17,7 +17,7 @@
 }
 
 body{
-    background-color: #ffffff;
+    background-color: #f9f3f0;
     height: 100vh;
     
 }
@@ -37,14 +37,34 @@ body{
     cursor: pointer;
 }
 
+.show-menu .hamburguer{
+    right: 16rem;
+}
+
 .line{
     width: 100%;
     height: .1rem;
     background-color: #ffffff;
     box-shadow: .1rem .1rem 1px #000000;
+    transition: transform .5s ;
+}
+
+
+.show-menu #line1{
+    transform: rotate(45deg) translate(.35rem, .4rem);
+}
+
+.show-menu #line2{
+    visibility: hidden;
+}
+
+.show-menu #line3{
+    transform: rotate(-45deg) translate(.34rem, -.55rem);
 }
 
 header{
+    
+    margin-left: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -102,14 +122,15 @@ header{
 .sidebar{
     width: 20rem;
     height: 100vh;
-    background-color: #faf5fd;
+    background-color: #f4e7e1;
     position: fixed;
     top: 0;
     right: -20rem;
-    transition: .5s;
+    transition: .7s;
+    z-index: 1;
 }
 
-.sidebar.show-menu{
+.show-menu .sidebar{
     right: 0;
 }
 
@@ -133,7 +154,7 @@ header{
 }
 
 .menu-link:hover{
-    color: #48006a ;
+    color: #ffffff ;
 }
 
 .social-media{
@@ -155,7 +176,7 @@ header{
 }
 
 .social-media i:hover{
-    color: #48006a;
+    color: #ffffff;
 }
 
 
@@ -167,16 +188,23 @@ header{
 
 .slides{
     border: solid .2rem #000000;
-    height: 30rem;
-    width: 40rem;
+    height: 70%;
+    width: 50%;
     border-radius: 1rem;
     overflow: hidden;
     position: absolute;
-    top: 55%;
-    left: 45%;
+    top: 58%;
+    left: 47%;
     transform: translate(-50%, -50%);
+    z-index: 0;
+}
 
-} 
+/* @media(max-width:600px){
+    .slides{
+        height: 20rem;
+        width: 30rem;
+    }
+} */
 
 .navigation{
     position: absolute;
@@ -246,7 +274,9 @@ input{
 /* REFERENTE AO SOBRE MIM */
 
 .sobre{
-    margin-top: 45%;
+    background-color: #f4e7e1;  
+    margin-top: 46%;
+    padding-bottom: 5%;
     width: 100%;
     gap: 2rem;
     display: flex;
@@ -254,6 +284,7 @@ input{
 }
 
 .titulo-sobre{
+    padding-top: 10%;
     width: 100%;
     text-align: center;
     text-transform: capitalize;
@@ -262,6 +293,9 @@ input{
 }
 
 .conteudo-sobre{
+    padding: 2rem 2rem;
+    border-radius: 2rem;
+    background-color: #e2c5b6 ;
     width: 50%;
     margin-left: 25%;
     font-family: var(--texto);
@@ -275,7 +309,8 @@ input{
 /* REFERENTE A GALERIA DE FOTOS */
 
 .galeria{
-    margin-top: 25%;
+    background-color: #f9f3f0;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -299,8 +334,7 @@ input{
 
     justify-content: space-evenly;
     align-content: space-evenly;
-    border: solid 1px #000;
-    
+        
 }
 
 
