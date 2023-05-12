@@ -125,7 +125,7 @@ header{
     position: fixed;
     top: 0;
     right: -20rem;
-    transition: .7s;
+    transition: .1s;
     z-index: 1;
 }
 
@@ -275,32 +275,51 @@ input{
 .sobre{
     background-color: #f4e7e1;  
     margin-top: 46%;
-    padding-bottom: 5%;
-    width: 100%;
-    gap: 2rem;
+    height: 55rem;
+}
+
+.icon-profile img{
+    margin-left: 8rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    width: 15rem;
+}
+
+.textos-sobre{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 7rem;
+} 
+
+.title-sobre{
+    margin-bottom: 1rem;
 }
 
-.titulo-sobre{
-    padding-top: 10%;
-    width: 100%;
-    text-align: center;
-    text-transform: capitalize;
-    font-family: var(--titulo);
-    font-size: 2em;
-}
+.conteudo1-box{
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 20rem;
 
-.conteudo-sobre{
-    padding: 2rem 2rem;
-    border-radius: 2rem;
-    background-color: #e2c5b6 ;
-    width: 50%;
-    margin-left: 25%;
+    font-size: 1.5em;
     font-family: var(--texto);
-    font-size: 2em;
-    font-weight: 300;
+
+
 }
+
+.conteudo2-box{
+    justify-content: space-around;
+    width: 30%;
+
+    background-color: #ac9487 ;
+    color: #ffffff;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5em;
+    font-family: var(--texto);
+}
+
+
 
 /* ---------------------------- */
 
