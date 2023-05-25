@@ -192,7 +192,7 @@ header{
 
 .slides{
     border: solid .2rem #000000;
-    height: 70%;
+    height: 75%;
     width: 55%;
     border-radius: 5rem;
     overflow: hidden;
@@ -279,16 +279,18 @@ input{
 
 .sobre{
     background-color: #f4e7e1;  
-    margin-top: 46%;
+    margin-top: 50%;
     height: 55rem;
     padding-bottom: 7.5rem;
 }
+
 
 .icon-profile img{
     margin-left: 8rem;
     margin-top: 1rem;
     padding: 2rem;
     width: 12rem;
+
 }
 
 .textos-sobre{
