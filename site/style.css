@@ -61,29 +61,29 @@ body{
     transform: rotate(-45deg) translate(.34rem, -.55rem);
 }
 
+/* ESTILO NOVO */
+
 header{
-    
-    margin-left: 5rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 7rem;
+    justify-content: center;
+    height: 10rem;
+    margin: 2rem;
     font-family: var(--texto);
 }
 
-.titulo h1{
-    text-transform: uppercase;
-    margin-left: 10rem;
-    font-size: 3rem;
+.header-info{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100vw;
 }
+
 
 .info{
     display: flex;
-    width: 70vw;    
-    position: absolute;
-    padding-top: 8rem;
-    justify-content: space-between;
-    padding-left: 8rem;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .info a{
@@ -91,24 +91,34 @@ header{
 }
 
 .info span{
-    background-color: #000000;
-    color: #ffffff;
-    
+    background-color: #f4e7e1;
     font-size: 1.3em;
 }
 
 .topic{
     display: flex;
     left: 0;
-    display: flex;
     gap: 3rem;
 
     font-size: 1.5em;
 }
 
+.topic li{
+    border: 1px solid black;
+    border-radius: 5rem;
+    padding: .2rem .2rem;
+    width: 6rem;
+    background-color: #f4e7e1;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
 .header-social{
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .header-social i{
@@ -116,12 +126,39 @@ header{
     font-size: 1.5em;
 }
 
+
+
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 10rem;
+}
+
+.titulo h1{
+    text-transform: uppercase;
+    margin-left: 10rem;
+    font-size: 2rem;
+    font-family: var(--texto);
+    font-weight: 500;
+}
+
+.titulo h2{
+    margin-left: 10rem;
+    font-family: var(--texto);
+    font-weight: 400;
+}
+
 .separando{
     position: absolute;
-    width: 71%;
-    border: solid .1rem #4c4c4c27;
-    margin: 12rem 0rem 0 8rem;
+    margin: 2.5% 0rem 0rem 2%;
+    border: solid 1px #2f2f2f;
+    width: 50%;
 }
+
+/* HJKDSAJKHDHJKA */
 
 .sidebar{
     width: 20rem;
@@ -192,13 +229,13 @@ header{
 
 .slides{
     border: solid .2rem #000000;
-    height: 75%;
-    width: 55%;
+    height: 70%;
+    width: 50%;
     border-radius: 5rem;
     overflow: hidden;
     position: absolute;
-    top: 58%;
-    left: 47%;
+    top: 60%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 0;
 }
@@ -279,8 +316,8 @@ input{
 
 .sobre{
     background-color: #f4e7e1;  
-    margin-top: 50%;
-    height: 55rem;
+    margin-top: 45%;
+    height: 60rem;
     padding-bottom: 7.5rem;
 }
 
