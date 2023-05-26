@@ -21,6 +21,18 @@ body{
     height: 100vh;
 }
 
+.fundo img{
+    position: absolute;
+    width: 30%;
+    opacity: 30%;
+    margin-left: 3rem;
+}
+
+.fundo img:nth-child(2){
+    margin-left: 80rem;
+    opacity: 30%;
+}
+
 /* REFERENTE AO HEADER DA PAGINA */
 
 .hamburguer{
@@ -62,6 +74,8 @@ body{
 }
 
 /* ESTILO NOVO */
+
+
 
 header{
     display: flex;
