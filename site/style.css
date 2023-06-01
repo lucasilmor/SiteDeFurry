@@ -14,10 +14,13 @@
 :root {
     --titulo: 'Yeseva One';
     --texto: 'Josefin sans';
+    --cor-primaria: #8D6B94;
+    --cor-secundaria: #DFCDDB;
+    --branco: #ffffff;
 }
 
 body {
-    background-color: #f9f3f0;
+    background-color: var(--cor-primaria);
     height: 100vh;
 
 }
@@ -36,7 +39,7 @@ body {
 
 /* REFERENTE AO HEADER DA PAGINA */
 
-.hamburguer {
+/* .hamburguer {
     width: 2rem;
     height: 2rem;
     position: fixed;
@@ -72,10 +75,7 @@ body {
 
 .show-menu #line3 {
     transform: rotate(-45deg) translate(.34rem, -.55rem);
-}
-
-/* ESTILO NOVO */
-
+} */
 
 
 header {
@@ -106,7 +106,7 @@ header {
 }
 
 .info span {
-    background-color: #f4e7e1;
+    background-color: var(--cor-secundaria);
     font-size: 1.3em;
 }
 
@@ -123,7 +123,7 @@ header {
     border-radius: 5rem;
     padding: .2rem .2rem;
     width: 6rem;
-    background-color: #f4e7e1;
+    background-color: var(--cor-secundaria);
 
     display: flex;
     justify-content: center;
@@ -140,9 +140,6 @@ header {
     color: #000000;
     font-size: 1.5em;
 }
-
-
-
 
 .titulo {
     display: flex;
@@ -169,13 +166,11 @@ header {
 .separando {
     position: absolute;
     margin: 2.5% 0rem 0rem 2%;
-    border: solid 1px #2f2f2f;
+    border: solid 1px var(--cor-secundaria);
     width: 50%;
 }
 
-/* HJKDSAJKHDHJKA */
-
-.sidebar {
+/* .sidebar {
     width: 20rem;
     height: 100vh;
     background-color: #f4e7e1;
@@ -233,9 +228,7 @@ header {
 
 .social-media i:hover {
     color: #ffffff;
-}
-
-
+} */
 
 /* ---------------------------------- */
 
@@ -254,13 +247,6 @@ header {
     transform: translate(-50%, -50%);
     z-index: 0;
 }
-
-/* @media(max-width:600px){
-    .slides{
-        height: 20rem;
-        width: 30rem;
-    }
-} */
 
 .navigation {
     position: absolute;
@@ -329,57 +315,36 @@ input {
 
 /* REFERENTE AO SOBRE MIM */
 
-.sobre {
-    background-color: #f4e7e1;
-    margin-top: 45%;
-    height: 60rem;
-    padding-bottom: 7.5rem;
-}
-
-
-.icon-profile img {
-    margin-left: 8rem;
-    margin-top: 1rem;
-    padding: 2rem;
-    width: 12rem;
-
-}
-
-.textos-sobre {
+.sobre-wrapper {
     display: flex;
-    justify-content: center;
-    gap: 7rem;
-    margin-top: 2rem;
-    font-weight: 300;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+    margin-top: 45%;
+    height: 50rem;
+    
 }
 
-.title-sobre {
+.conteudo-wrapper {
+    border-radius: 1rem;
+    padding: 3rem 2rem 4rem 2rem;
+    font-weight: 300;
+    width: 30%;
+    font-size: 1.9em;
+    font-family: var(--texto);
+}
+
+.title-sobre{
+    font-weight: 400;
+    font-family: var(--titulo);
+    display: flex;
     margin-bottom: 1rem;
 }
 
-.conteudo1-box {
-    justify-content: space-around;
-    align-items: center;
-    width: 30%;
-    height: 20rem;
-
-    font-size: 2em;
-    font-family: var(--texto);
-
-
+.cartoon{
+    width: 40rem;
 }
 
-.conteudo2-box {
-    justify-content: space-around;
-    width: 30%;
-
-    background-color: #796a62;
-    color: #ffffff;
-    border-radius: 1rem;
-    padding: 1rem;
-    font-size: 1.8em;
-    font-family: var(--texto);
-}
 
 
 
@@ -389,7 +354,7 @@ input {
 /* REFERENTE A GALERIA DE FOTOS */
 
 .galeria {
-    background-color: #f9f3f0;
+    background-color: var(--cor-primaria);
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
