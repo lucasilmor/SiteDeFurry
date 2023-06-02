@@ -14,8 +14,9 @@
 :root {
     --titulo: 'Yeseva One';
     --texto: 'Josefin sans';
-    --cor-primaria: #8D6B94;
+    --cor-primaria: #eeeeee;
     --cor-secundaria: #DFCDDB;
+    --cor-botoes: #8D6B94;
     --branco: #ffffff;
 }
 
@@ -101,12 +102,10 @@ header {
     width: 100%;
 }
 
-.info a {
-    color: #000000;
-}
 
 .info span {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-botoes);
+    color: var(--branco);
     font-size: 1.3em;
 }
 
@@ -114,7 +113,7 @@ header {
     display: flex;
     left: 0;
     gap: 3rem;
-
+    color: var(--branco);
     font-size: 1.5em;
 }
 
@@ -123,10 +122,21 @@ header {
     border-radius: 5rem;
     padding: .2rem .2rem;
     width: 6rem;
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-botoes);
 
     display: flex;
     justify-content: center;
+    transition: .3s;
+}
+
+.topic li:hover{
+    background-color: #674e6c;
+}
+
+
+
+.topic li a{
+    color: var(--branco);
 }
 
 
@@ -266,7 +276,7 @@ header {
     transition: .2s;
 }
 
-input {
+.slides input {
     display: none;
 }
 
@@ -335,8 +345,7 @@ input {
 }
 
 .title-sobre{
-    font-weight: 400;
-    font-family: var(--titulo);
+    font-family: var(--texto);
     display: flex;
     margin-bottom: 1rem;
 }
@@ -356,6 +365,7 @@ input {
 .galeria {
     background-color: var(--cor-primaria);
     padding-top: 5rem;
+    padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -477,23 +487,126 @@ input {
 }
 /* -------------------------- */
 
+  /* SESSAO CONTATO */
+
+    .sessao-contato{
+        width: 100%;
+        height: 100vh;
+        background-color: var(--cor-secundaria);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contato-wrapper{
+        border-radius: 2rem;
+        width: 70%;
+        height: 40rem;
+        display: flex;
+        box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.26);
+    }
+
+    .contato-left{
+        border-radius: 2rem;
+        width: 35%;
+        background-size: cover;
+        background: linear-gradient(rgba(254, 128, 243, 0.2), rgba(237, 176, 228, 0.27));
+    }
+
+    .contato-left img{
+        width: 100%;
+        opacity: 80%;
+        transform: scaleX(-1);
+        margin-top: 10rem;
+    }
+
+    .contato-right{
+        width: 100%;
+        background-color: var(--cor-primaria);
+        padding: 1rem 3rem 3rem 3rem;
+    }
+
+    .sessao-contato h2{
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        font-family: var(--texto);
+        color: #272727;
+        align-items: center;
+        font-size: 3em;
+    }
+
+    .sessao-contato form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-group{
+        position: relative;
+    }
+
+    .field{
+        background-color: transparent;
+        width: 20rem;
+        border: none;
+        font-size: 1.5rem;
+        font-family: var(--texto);
+        border-bottom: 2px dashed;
+        height: 3rem;
+        outline: none;
+        margin-top: 2.2rem;
+    }
+
+    .input-group textarea{
+        padding-top: 1rem;
+        max-width: 20rem;
+        max-height: 7rem;
+    }
+
+    .field-label{
+        position: absolute;
+        left: 0;
+        top: 0.5rem;
+        font-size: 1.2rem;
+        font-family: var(--texto);
+        text-transform: uppercase;
+    }
+
+    .btn-submit{
+        width: 50%;
+        height: 2rem;
+        font-size: 1.2rem;
+        font-family: var(--texto);
+        text-transform: uppercase;
+        margin-top: 1.8rem;
+
+        border-radius: .5rem;
+        border: none;
+        color: var(--branco);
+        background-color: var(--cor-botoes);
+        transition: .2s;
+        cursor: pointer;
+    }
+
+    .btn-submit a{
+        color: inherit;
+    }
+
+    .btn-submit:hover{
+        background-color: #674e6c;
+    }
 
 
 
-
-
-
-
-
-
-
+ /* //////////////////////////////// */
 
 /* REFERENTE AO FOOTER */
 
 footer {
     width: 100%;
     background-color: #2e2e2e;
-    margin-top: 5rem;
     padding-bottom: 3%;
     padding-top: 3%;
     display: flex;
@@ -512,11 +625,12 @@ footer ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    font-size: 1.5em;
+    font-size: 1.4em;
     width: 60%;
     padding-left: 1rem;
     color: #ffffff;
     padding-left: 15rem;
+    font-family: var(--texto);
 }
 
 footer i {
